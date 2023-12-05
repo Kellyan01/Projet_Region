@@ -1,42 +1,21 @@
+// updateLocalStorage('2')
+
 const inputName = document.querySelector('#name');
 const inputFirstname = document.querySelector('#firstname');
 const inputEmail = document.querySelector('#email');
-const inputAvatar = document.querySelector('#avatar');
 
-let user;
-
-async function getUser() {
-
-    let response = await fetch('https://blabladrar.adrardev.fr/user/id/2');
-
-    if (response.ok) {
-        user = await response.json();
+let userData = localStorage.getItem('User_CarPool');
+let user = JSON.parse(userData);
         
-        inputName.value = user["name"];
-        inputFirstname.value = user["firstname"];
-        inputEmail.value = user["email"];
-        
-        inputName.placeholder = user["name"];
-        inputFirstname.placeholder = user["firstname"];
-        inputEmail.placeholder = user["email"];
-    }
-}
+const id = user['id'];
 
-getUser()
+inputName.value = user["name"];
+inputFirstname.value = user["firstname"];
+inputEmail.value = user["email"];
 
-async function postJSON(donnees) {
-    try {
-      const reponse = await fetch("https://blabladrar.adrardev.fr/user/update", {
-        method: "POST",
-        body: JSON.stringify(donnees),
-      });
-  
-      const resultat = await reponse.json();
-      console.log("Réussite :", resultat);
-    } catch (erreur) {
-      console.error("Erreur :", erreur);
-    }
-}
+inputName.placeholder = user["name"];
+inputFirstname.placeholder = user["firstname"];
+inputEmail.placeholder = user["email"];
 
 function updateUserInfo() {
     user["name"] = inputName.value;
@@ -46,11 +25,29 @@ function updateUserInfo() {
     postJSON(user);
 }
 
-// Récupération User - CarPool
-// const retrievedUserJSON = localStorage.getItem('User_CarPool');
-// const user = JSON.parse(retrievedUserJSON);
+async function postJSON(donnees) {
+  try {
+    const reponse = await fetch("https://blabladrar.adrardev.fr/user/update", {
+      method: "POST",
+      body: JSON.stringify(donnees),
+    });
+    updateLocalStorage(id);
+  } catch (erreur) {
+    console.error("Erreur :", erreur);
+  }
+}
 
 
+async function updateLocalStorage(id) {
+  try {
+    const reponse = await fetch('https://blabladrar.adrardev.fr/user/id/'+id, {
+      method: "POST",
+    });
 
-
-// inputAvatar.value = user["avatar"];
+    const resultat = await reponse.json();
+    responseJSON = JSON.stringify(resultat);
+    localStorage.setItem('User_CarPool', responseJSON);
+  } catch (erreur) {
+    console.error("Erreur :", erreur);
+  }
+}
