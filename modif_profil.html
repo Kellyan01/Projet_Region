@@ -4,12 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modification de profil</title>
     <link rel="stylesheet" href="./style/style.css">
     <script src="./script/script.js"></script>
 </head>
 
 <body>
+    <form action="/ma-page-de-traitement" method="post">
+        <ul>
+            <li>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+                <label for="name">Prénom :</label>
+                <input type="text" id="name" name="user_surname" />
+            </li>
+            <li>
+                <label for="mail">E-mail :</label>
+                <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+                <label for="avatar">Modifiez votre photo de profil :</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+            </li>
+        </ul>
+    </form>
 
 </body>
 
