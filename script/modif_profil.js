@@ -24,16 +24,32 @@ async function getUser() {
 
 getUser()
 
+async function postJSON(donnees) {
+    try {
+      const reponse = await fetch("https://blabladrar.adrardev.fr/user/update", {
+        method: "POST",
+        body: JSON.stringify(donnees),
+      });
+  
+      const resultat = await reponse.json();
+      console.log("Réussite :", resultat);
+    } catch (erreur) {
+      console.error("Erreur :", erreur);
+    }
+}
+
 function updateUserInfo() {
     user["name"] = inputName.value;
     user["firstname"] = inputFirstname.value;
     user["email"] = inputEmail.value;
-    console.log(user);
+    delete user['id'];
+    postJSON(user);
 }
 
 // Récupération User - CarPool
 // const retrievedUserJSON = localStorage.getItem('User_CarPool');
 // const user = JSON.parse(retrievedUserJSON);
+
 
 
 
