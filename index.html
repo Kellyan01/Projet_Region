@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <script src="./script/script.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+        <link rel="stylesheet" href="./style/common.css">
+        <link rel="stylesheet" href="./style/index.css">
+        <script src="./script/script.js"></script>
+    </head>
 
-<body>
+    <body>
+        <header>
+            <img src="" alt="">
+        </header>
 
-</body>
+        <aside id="blue_background">
+            <h1>Conduisez moins, souriez plus !</h1>
+
+            <form action="POST">
+                <input type="text" name="departure" placeholder="• Départ">
+                <input type="text" name="arrival" placeholder="• Destination">
+                <div>
+                    <input type="date" name="date">
+                    <div id="nbr_pers_button">
+                        <img src="img/user.png" alt="Nombre de personnes">
+                        <span id="nbr_pers">1</span>
+                    </div>
+                </div>
+                <input type="submit" value="Rechercher">
+            </form>
+        </aside>
+
+    </body>
 
 </html>
