@@ -1,0 +1,91 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    padding: 0 20px;
+}
+h1{font-family: 'Lilita One', sans-serif;}
+header img {
+    height: 30px;
+}
+p{
+    font-family: 'Libre Franklin', sans-serif;
+}
+#logo {
+    height: 50px;
+}
+
+main{
+    height: 300px;
+    background: linear-gradient(
+        180deg,
+        rgba(35, 185, 233, 0.58) 0%,
+        rgba(86, 204, 242, 0.28) 100%
+    );
+    z-index: 0;
+}
+section{
+    background-color: white;
+    height:350px;
+    position: relative;
+    width: 90%;
+    margin-left: 18px;
+    bottom: 270px;
+    z-index: 1;
+    border-radius: 15px;
+}
+p, h2{
+    margin: 0;
+}
+.messages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conversations{
+    display: flex;
+    border: solid 1px black;
+    width: 95%;
+    margin-left: 8px;
+    margin: 10px;
+}
+.conversations h2{
+    font-size: 15px;
+    margin-top:  10px;
+    margin: 0;
+}
+.conversations p{
+    font-size: 10px;
+}
+
+.conversations img{
+    margin: 10px;
+}
+.date{
+    margin-left: 88%;
+    padding-top: 1%;
+    color: #38729B;
+    font-weight: bold;
+    
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    margin-left: 44%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 40px;
+}
+#fleche{
+    height: 100%;
+    padding-top: 4%;
+}
