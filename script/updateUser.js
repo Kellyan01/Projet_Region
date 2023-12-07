@@ -51,3 +51,9 @@ async function updateLocalStorage(id) {
         console.error("Erreur :", erreur);
     }
 }
+
+const modifButton = document.querySelector("#modifButton");
+modifButton.addEventListener("click", event => {
+    event.preventDefault();
+    updateUserInfo();
+})
