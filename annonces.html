@@ -40,7 +40,58 @@
             <img src="img/header_user.png" alt="Connexion">
         </div>
     </header>
+    <aside id="blue_background">
+        <h1>Conduisez moins, souriez plus !</h1>
 
+        <form method="POST">
+            <input type="text" name="departure" placeholder="• Départ">
+            <input type="text" name="arrival" placeholder="• Destination">
+            <div>
+                <input type="date" name="date">
+                <div id="nbr_pers_button">
+                    <img src="img/user.png" alt="Nombre de personnes">
+                    <span id="nbr_pers">1</span>
+                </div>
+            </div>
+            <input type="submit" value="Rechercher">
+        </form>
+    </aside>
+    <div class="row">
+        <div class="card">
+            <img id="profil" src="./img/image_profil.PNG" alt="">
+            <div class="trajet">
+                <p>Ramonville</p>
+                <img id="trajet" src="./img/trajet.png" alt="">
+                <p>Borderouge</p>
+            </div>
+            <div class="trajet1">
+                <p>8h35</p>
+                <p>9h30</p>
+            </div>
+            <div class="trajet">
+                <img id="nbrplace" src="./img/homme.png" alt="">
+                <p>3 places restant</p>
+                <input type="button" id="button" name="button" value="Afficher" />
+            </div>
+        </div>
+        <div class="card">
+            <img id="profil" src="./img/image_profil.PNG" alt="">
+            <div class="trajet">
+                <p>Ramonville</p>
+                <img id="trajet" src="./img/trajet.png" alt="">
+                <p>Borderouge</p>
+            </div>
+            <div class="trajet1">
+                <p>8h35</p>
+                <p>9h30</p>
+            </div>
+            <div class="trajet">
+                <img id="nbrplace" src="./img/homme.png" alt="">
+                <p>3 places restant</p>
+                <input type="button" id="button" name="button" value="Afficher" />
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

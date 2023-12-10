@@ -261,3 +261,140 @@ section {
     color: #38729B;
     font-weight: bold;
 }
+
+
+/************************
+  ANNONCES - FORM SEARCH
+************************/
+
+#blue_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient( 180deg, rgba(35, 185, 233, 0.58) 0%, rgba(86, 204, 242, 0.28) 100%);
+    height: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: clip;
+    width: 60%;
+    padding: 10px 20px 0;
+    gap: 20px;
+    box-shadow: 0 5px 10px #00000080;
+    border-radius: 25px;
+}
+
+form>div {
+    display: flex;
+    gap: 10%;
+}
+
+form img {
+    width: 15px;
+    height: 15px;
+}
+
+#nbr_pers_button {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: solid #00000080 1px;
+}
+
+input[type="date"] {
+    border: none;
+    border-right: solid #00000080 1px;
+    width: min-content;
+}
+
+input[type="submit"] {
+    background-color: #0d5386;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    margin: -5px -20px;
+    border: none;
+}
+
+
+/************************
+    ANNONCES - CARD
+***********************/
+
+.card {
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #ffffff);
+    width: auto;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    color: black;
+    box-shadow: 0 5px 10px #00000080;
+    margin-top: 3%;
+}
+
+.trajet {
+    display: flex;
+    margin-top: 25px;
+}
+
+#profil {
+    margin-top: 20px;
+    width: 25%;
+    float: left;
+    margin-right: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.trajet1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nbrplace {
+    width: 10%;
+}
+
+#nbrplace+p {
+    margin-top: 5px;
+}
+
+#button {
+    margin-left: 10%;
+    background-color: #38729B;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#trajet {
+    width: 40%;
+    height: 50%;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    background: #527cb3;
+    height: 220px;
+    width: 30px;
+    border-radius: 32px;
+}
