@@ -68,7 +68,7 @@ h1{
 }
 
 #nbrplace {
-    width: 15%;
+    height:70%;
 }
 
 #nbrplace+p {
@@ -85,7 +85,12 @@ h1{
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+<<<<<<< Updated upstream
     border-radius: 30px;
+=======
+    border-radius: 40% 40%;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+>>>>>>> Stashed changes
 }
 
 #trajet {
@@ -98,5 +103,9 @@ h1{
 
 .nbrPers{
     display: flex;
+<<<<<<< Updated upstream
     align-items: center;
+=======
+    height: 50px;
+>>>>>>> Stashed changes
 }
