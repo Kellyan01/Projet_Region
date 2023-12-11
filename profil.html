@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-        </style>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Lilita+One&display=swap');
-            </style>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
+    <script src="./script/deconnexion.js" defer></script>
+    <script src="./script/showUser.js" defer></script>
+    <script src="./script/updateUser.js" defer></script>
+    <script src="./script/modifProfil.js" defer></script>
 </head>
 
 <body>
@@ -26,8 +25,8 @@
     </header>
     <main>
         <div class="iconmain">
-            <img id="mail" src="email.png" alt="iconemail" width="50px">
-            <img id="pen" src="crayon.png" alt="iconcrayon" width="45px">
+            <img id="mail" src="img/email.png" alt="iconemail" width="35px">
+            <img id="pen" src="img/crayon.png" alt="iconcrayon" width="35px" height="35px" onclick="openForm()">
         </div>
         <div class="gerard">
             <img src="gerard.jpg" width="130px" alt="">
@@ -35,6 +34,29 @@
             <p id="email"></p>
         </div>
         <div id="border"></div>
+
+        <form class="hideform" id="hideform">
+
+            <h2>Modifier mes informations</h2>
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name" placeholder="Nom de famille" required />
+            </div>
+            <div>
+                <label for="firstname">Prénom :</label>
+                <input type="text" id="firstname" name="user_firstname" placeholder="Prénom" required />
+            </div>
+            <div>
+                <label for="emailUpdate">E-mail :</label>
+                <input type="email" id="emailUpdate" name="user_email" placeholder="Email" required />
+            </div>
+            <div class="confcancel">
+                <button id="modifButton">Modifier</button>
+                <button id="cancelButton" onclick="closeForm()">Annuler</button>
+            </div>
+
+
+        </form>
     </main>
     <script type="text/javascript" src="script.js"></script>
 </body>
