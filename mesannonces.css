@@ -1,0 +1,11 @@
+
+.depart {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.destination {
+    display: flex;
+    flex-direction: column;
+}
