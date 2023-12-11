@@ -2,14 +2,25 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 10px 5px;
+    margin: 10px 0;
     padding: 20px 10px;
     gap: 10px;
 }
 
+span{
+    font-weight: bold;
+}
 #title {
     color: #0d5386;
     font-weight: bold;
+    display: grid;
+    align-self: center;
+}
+
+#utilisateur {
+    color: #0d5386;
+    font-weight: bold;
+    
 }
 
 #annonce {
@@ -42,12 +53,13 @@ main {
 }
 
 #avatar {
-    height: 100px;
+    height: 120px;
     border: solid #00000080 1px;
 }
 
 #map {
     margin: 0 -15px;
+    border: 1px solid black;
 }
 
 #below {
@@ -59,7 +71,6 @@ main {
 #below > div:first-child {
     display: flex;
     flex-direction: column;
-    background-color: #aed9eb;
     text-align: center;
     margin: -10px -15px;
     padding: 20px;

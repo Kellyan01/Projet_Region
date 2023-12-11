@@ -7,12 +7,34 @@
         <title>Détail de l'annonce</title>
         <link rel="stylesheet" href="./style/common.css">
         <link rel="stylesheet" href="./style/annonce_view.css">
+        <link rel="stylesheet" href="./style/style.css">
         <script src="./script/script.js"></script>
     </head>
 
     <body>
         <header>
-            <img src="img/burger-bar.png" alt="Menu">
+            <nav>
+                <div class="navbar">
+                    <div class="container nav-container">
+                        <input class="checkbox" type="checkbox" name="" id="" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+    
+                        <div class="menu-items">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="profil.html">Profil</a></li>
+                            <li><a href="annonces.html">Annonces</a></li>
+                            <li><a href="mesannonces.html">Mes Annonces</a></li>
+                            <li><a href="apropos.html">A propos</a></li>
+                            <li><a id="boutonDeconnexion" href="#">Déconnexion</a></li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    
             <img id="logo" src="img/logo.png" alt="Logo">
             <div>
                 <img src="img/search.png" alt="Recherche">
@@ -21,20 +43,26 @@
         </header>
 
         <main>
-            <div id="title">Annonce : Tournefeuille >> Basso cambo</div>
+            
+            <div id="title">Tournefeuille>> Basso cambo</div>
+            <div id="utilisateur"> KARDA Gilbert </div>
 
             <div id="annonce">
-                <img id="avatar" src="https://picsum.photos/200" alt="Avatar">
+                <img id="avatar" src="https://picsum.photos/300" alt="Avatar">
                 <div>
                     <div>
-                        <span>Heure de départ : 8h20</span>
-                        <span>Lieu de départ : Mairie de Toulouse</span>
+                        <p> <span>Heure de départ :</span> 8h20</p>
+                        <p><span>Lieu de départ :</span> 5 chemin de l'adrar, 31200 </p>
+                        <p><span>Lieu d'arrivé :</span> 12 avenue du titre, 31500</p>
                     </div>
 
-                    <span>Informations complémentaires : Je serai avec un manteau rouge !</span>
+                    <p><span>Informations complémentaires :</span> Je serai avec un manteau rouge !</p>
+                    <div id="datecreation"><p><span>Date de création :</span> 10/10/2023 </p></div>
+
+                    <div><p><span>Nombre de places :</span> 2 </p></div>
 
                     <div>
-                        <button>Réserver</button>
+                        <button><span>Réserver</span></button>
                     </div>
                 </div>
             </div>
@@ -44,29 +72,29 @@
             <div id="below">
                 <div>
                     <h2>Aux alentours :</h2>
-                    <span>(près de votre destination)</span>
+                    <p>(près de votre destination)</p>
                 </div>
 
                 <div id="around">
                     <div>
                         <img src="https://picsum.photos/100" alt="img">
-                        <span>Mélée Numérique</span>
+                        <p>Mélée Numérique</p>
                     </div>
                     <div>
                         <img src="https://picsum.photos/100" alt="img">
-                        <span>Mélée Numérique</span>
+                        <p>Mélée Numérique</p>
                     </div>
                     <div>
                         <img src="https://picsum.photos/100" alt="img">
-                        <span>Mélée Numérique</span>
+                        <p>Mélée Numérique</p>
                     </div>
                     <div>
                         <img src="https://picsum.photos/100" alt="img">
-                        <span>Mélée Numérique</span>
+                        <p>Mélée Numérique</p>
                     </div>
                     <div>
                         <img src="https://picsum.photos/100" alt="img">
-                        <span>Mélée Numérique</span>
+                        <p>Mélée Numérique</p>
                     </div>
                 </div>
             </div>
