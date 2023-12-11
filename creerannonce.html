@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style/creerannonce.css">
 </head>
 
-<body>
     <!-- ------------------------------------HEADER------------------------------------------------- -->
     <header>
         <nav>
@@ -46,50 +45,60 @@
 
     <h1>Publication d'un trajet</h1>
 
-    <form>
-        <label for="departure">Départ:</label>
-        <input type="text" id="departure" name="departure" required>
+    <form id="formulaire">
+        <label for="title">Titre de l’annonce</label>
+        <input type="text" id="title" name="title" required>
 
-        <label for="destination">Destination:</label>
-        <input type="text" id="destination" name="destination" required>
+        <label for="creation_date">Date de création:</label>
+        <input type="date" id="creation_date" name="creation_date" required>
 
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" required>
 
-        <label for="participants">Nombre de participants:</label>
-        <select id="participants" name="participants" required>
-            <option value="1">1 personne</option>
-            <option value="2">2 personnes</option>
-            <option value="3">3 personnes</option>
-            <option value="3">4 personnes</option>
-        </select>
+        <label for="place_number">Nombre de place</label>
+        <input type="number" id="place_number" name="place_number" required>
 
-        <button type="submit">Publier</button>
+        <label for="name_localisation">nom du lieu</label>
+        <input type="text" id="name_localisation" name="name_localisation" required>
+
+        <label for="name_street">nom de la rue</label>
+        <input type="text" id="name_street" name="name_street" required>
+
+        <label for="num_street">numéro de voie</label>
+        <input type="number" id="num_street" name="num_street" required>
+
+        <label for="town">Ville</label>
+        <input type="text" id="town" name="town" required>
+
+        <label for="postal_code">Code Postale</label>
+        <input type="number" id="postal_code" name="postal_code" required>
+
+        <input type="submit" value="Publier">
     </form>
 
     <!-- ------------------------------------formulaire------------------------------------------------- -->
 
     <!-- ------------------------------------footer------------------------------------------------- -->
 
-      <footer>
-        <p>Voyager avec nous</p>
-        <div class="footer-images">
-          <img src="logo.svg" width="100px" alt="Image 1">
-          <img src="region.webp"width="100px" alt="Image 2">
-          <img src="adrar.png" width="120px" height="50px" alt="Image 3"> 
-        </div>
-        <a href="">Information Légale</a><a href="">
-        </a>
-      </footer>
+    <footer>
+    <p>Voyager avec nous</p>
+    <div class="footer-images">
+        <img src="logo.svg" width="100px" alt="Image 1">
+        <img src="region.webp"width="100px" alt="Image 2">
+        <img src="adrar.png" width="120px" height="50px" alt="Image 3"> 
+    </div>
+    <a href="">Information Légale</a><a href="">
+    </a>
+    </footer>
 
-   <!-- ------------------------------------footer------------------------------------------------- -->
+<!-- ------------------------------------footer------------------------------------------------- -->
+
+    
+    
+    
 
 
 
-
-
-
-</body>
-</html>
+    <script src="main.js"></script>
 </body>
 </html>
