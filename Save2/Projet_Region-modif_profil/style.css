@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Lilita One', sans-serif;
+    }
+p{
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    padding: 0 20px;
+}
+header > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    height: 30px;
+}
+
+#logo {
+    height: 50px;
+}
+main{
+    height: 500px;
+    background: linear-gradient(
+        180deg,
+        rgba(35, 185, 233, 0.58) 0%,
+        rgba(86, 204, 242, 0.28) 100%
+    );
+    z-index: 0;
+}
+.iconmain{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mail{
+    padding-left: 15px ;
+    padding-top: 15px;
+}
+#pen{
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.gerard{
+    text-align: center;
+}
+.gerard img{
+    border: solid 2px white;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+#border{
+    border-bottom: 2px solid black;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.infoconduc{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.infoconduc p {
+    padding-top: 12px;
+}
+.infoconduc p{
+    padding-left: 10px;
+}
+
+section{
+   margin-left: 15%;
+    background-color: white;
+    width: 70%;
+    position: relative;
+    z-index: 1;
+    bottom: 150px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 2px rgb(19, 18, 18);
+}
+.paragraphe p{
+    margin: 15px;
+    font-weight: bold;
+}
+.paragraphe img {
+    width: 15px;
+}
+.blue{
+    color: #38729B;
+    font-weight: bold;
+}
