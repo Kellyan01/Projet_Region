@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/creerannonce.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/creerannonce.css">
+    <script src="./script/script.js" defer></script>
+    <script src="./script/deconnexion.js" defer></script>
+    <script src="./script/navbar.js" defer></script>
+    <script src="./script/main.js" defer></script>
 </head>
 
 <!-- ------------------------------------HEADER------------------------------------------------- -->
@@ -22,21 +27,30 @@
 
                 <div class="menu-items">
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="profil.html">Profil</a></li>
+                    <!-- <li><a href="profil.html">Profil</a></li> -->
                     <li><a href="annonces.html">Annonces</a></li>
-                    <li><a href="mesannonces.html">Mes Annonces</a></li>
+                    <li id="liMesAnnonces"><a href="mesannonces.html">Mes Annonces</a></li>
                     <li><a href="apropos.html">A propos</a></li>
-                    <li><a id="boutonDeconnexion" href="#">Déconnexion</a></li>
+                    <!-- <li><a id="boutonDeconnexion" href="#">Déconnexion</a></li> -->
                 </div>
             </div>
         </div>
     </nav>
 
     <img id="logo" src="img/logo.png" alt="Logo">
-    <div>
-        <img src="img/search.png" alt="Recherche">
-        <img src="img/header_user.png" alt="Connexion">
-    </div>
+
+    <nav>
+        <ul>
+            <li class="deroulant"><img src="img/header_user.png" alt="Connexion">
+                <ul class="sous">
+                    <li id="liConnexion"><a href="connexion.html">Connexion</a></li>
+                    <li id="liInscription"><a href="inscription.html">Inscription</a></li>
+                    <li id="liProfil"><a href="profil.html">Mon Profil</a></li>
+                    <li id="liBoutonDeconnexion"><a href="#">Déconnexion</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 </header>
 
 <!-- ------------------------------------HEADER------------------------------------------------- -->
@@ -99,7 +113,6 @@
 
 
 
-<script src="main.js"></script>
 </body>
 
 </html>

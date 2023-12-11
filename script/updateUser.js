@@ -1,5 +1,15 @@
 // updateLocalStorage('2')
 
+//Afficher/Cacher Modif Form
+function openForm() {
+    document.getElementById("hideform").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("hideform").style.display = "none";
+}
+
+
 const inputName = document.querySelector('#name');
 const inputFirstname = document.querySelector('#firstname');
 const inputEmail = document.querySelector('#emailUpdate');
@@ -21,7 +31,7 @@ function updateUserInfo() {
     user["name"] = inputName.value;
     user["firstname"] = inputFirstname.value;
     user["email"] = inputEmail.value;
-    delete user['id'];
+    /*delete user['id'];*/ //-> pas besoin de delete cet id !
     postJSON(user);
 }
 
@@ -37,11 +47,11 @@ async function postJSON(donnees) {
     }
 }
 
-
+//CORRECTION : pas besoin de Fetch pour mettre à jour le Local Storage. Il suffit de réinjecter les informations entrés en Input dans le Local Storage
 async function updateLocalStorage(id) {
     try {
         const reponse = await fetch('https://blabladrar.adrardev.fr/user/id/' + id, {
-            method: "POST",
+            method: "GET",
         });
 
         const resultat = await reponse.json();

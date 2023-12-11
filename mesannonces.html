@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mes annonces</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mesannonces.css">
+    <link rel="stylesheet" href="./style/creerannonce.css">
     <script src="./script/script.js" defer></script>
     <script src="./script/deconnexion.js" defer></script>
+    <script src="./script/navbar.js" defer></script>
 </head>
 
 <body>
@@ -24,23 +27,214 @@
 
                     <div class="menu-items">
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="profil.html">Profil</a></li>
+                        <!-- <li><a href="profil.html">Profil</a></li> -->
                         <li><a href="annonces.html">Annonces</a></li>
-                        <li><a href="mesannonces.html">Mes Annonces</a></li>
+                        <li id="liMesAnnonces"><a href="mesannonces.html">Mes Annonces</a></li>
                         <li><a href="apropos.html">A propos</a></li>
-                        <li><a id="boutonDeconnexion" href="#">Déconnexion</a></li>
+                        <!-- <li><a id="boutonDeconnexion" href="#">Déconnexion</a></li> -->
                     </div>
                 </div>
             </div>
         </nav>
 
         <img id="logo" src="img/logo.png" alt="Logo">
-        <div>
-            <img src="img/search.png" alt="Recherche">
-            <img src="img/header_user.png" alt="Connexion">
-        </div>
+
+        <nav>
+            <ul>
+                <li class="deroulant"><img src="img/header_user.png" alt="Connexion">
+                    <ul class="sous">
+                        <li id="liConnexion"><a href="connexion.html">Connexion</a></li>
+                        <li id="liInscription"><a href="inscription.html">Inscription</a></li>
+                        <li id="liProfil"><a href="profil.html">Mon Profil</a></li>
+                        <li id="liBoutonDeconnexion"><a href="#">Déconnexion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
 
+
+    <main>
+
+        <h1>Mes Annonces</h1>
+        <div class="row">
+            <div class="card">
+                <div class="conducteur">
+                    <img id="profil" src="./img/image_profil.PNG" alt="">
+                    <h2 id="userName">Célia H.</h2>
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h2 id="date">12 décembre 2023</h2>
+                    </div>
+                    <div class="trajet">
+                        <div class="depart">
+                            <p><strong>Ramonville</strong></p>
+                            <p>8h35</p>
+                        </div>
+                        <img id="trajet" src="./img/trajet.png" alt="">
+                        <div class="destination">
+                            <p><strong id="destination">Borderouge</strong></p>
+                            <p id="heure">9h30</p>
+                        </div>
+                    </div>
+                    <div class="trajet">
+                        <div class="nbrPers">
+                            <img id="nbrplace" src="./img/homme.png" alt="">
+
+                            <p id="place">3 places restantes</p>
+                        </div>
+                        <input type="button" id="button" name="button" value="Afficher" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+
+                <div class="conducteur">
+                    <img id="profil" src="./img/image_profil.PNG" alt="">
+                    <h2>Célia H.</h2>
+                </div>
+
+                <div class="content">
+
+                    <div class="date">
+                        <h2>12 décembre 2023</h2>
+                    </div>
+                    <div class="trajet">
+
+                        <div class="depart">
+                            <p><strong>Ramonville</strong></p>
+                            <p>8h35</p>
+                        </div>
+
+                        <img id="trajet" src="./img/trajet.png" alt="">
+
+                        <div class="destination">
+                            <p><strong>Borderouge</strong></p>
+                            <p>9h30</p>
+                        </div>
+
+                    </div>
+
+                    <div class="trajet">
+
+
+                        <div class="nbrPers">
+                            <img id="nbrplace" src="./img/homme.png" alt="">
+
+                            <p>3 places restantes</p>
+
+                        </div>
+
+                        <input type="button" id="button" name="button" value="Afficher" />
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+
+                <div class="conducteur">
+                    <img id="profil" src="./img/image_profil.PNG" alt="">
+                    <h2>Célia H.</h2>
+                </div>
+
+                <div class="content">
+
+                    <div class="date">
+                        <h2>12 décembre 2023</h2>
+                    </div>
+                    <div class="trajet">
+
+                        <div class="depart">
+                            <p><strong>Ramonville</strong></p>
+                            <p>8h35</p>
+                        </div>
+
+                        <img id="trajet" src="./img/trajet.png" alt="">
+
+                        <div class="destination">
+                            <p><strong>Borderouge</strong></p>
+                            <p>9h30</p>
+                        </div>
+
+                    </div>
+
+                    <div class="trajet">
+
+
+                        <div class="nbrPers">
+                            <img id="nbrplace" src="./img/homme.png" alt="">
+
+                            <p>3 places restantes</p>
+
+                        </div>
+
+                        <input type="button" id="button" name="button" value="Afficher" />
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+
+                <div class="conducteur">
+                    <img id="profil" src="./img/image_profil.PNG" alt="">
+                    <h2>Célia H.</h2>
+                </div>
+
+                <div class="content">
+
+                    <div class="date">
+                        <h2>12 décembre 2023</h2>
+                    </div>
+                    <div class="trajet">
+
+                        <div class="depart">
+                            <p><strong>Ramonville</strong></p>
+                            <p>8h35</p>
+                        </div>
+
+                        <img id="trajet" src="./img/trajet.png" alt="">
+
+                        <div class="destination">
+                            <p><strong>Borderouge</strong></p>
+                            <p>9h30</p>
+                        </div>
+
+                    </div>
+
+                    <div class="trajet">
+
+
+                        <div class="nbrPers">
+                            <img id="nbrplace" src="./img/homme.png" alt="">
+
+                            <p>3 places restantes</p>
+
+                        </div>
+
+                        <input type="button" id="button" name="button" value="Afficher" />
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <p>Voyager avec nous</p>
+        <div class="footer-images">
+            <img src="./img/logo.svg" width="100px" alt="Image 1">
+            <img src="./img/region.webp" width="100px" alt="Image 2">
+            <img src="./img/adrar.png" width="120px" height="50px" alt="Image 3">
+        </div>
+        <a href="">Mentions Légales</a><a href="">CGU</a>
+    </footer>
 </body>
 
 </html>

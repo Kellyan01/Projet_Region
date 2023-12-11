@@ -38,7 +38,7 @@ async function postJSON(donnees) {
     }
 }
 
-document.querySelector("#buttonSubmit").addEventListener('click', event => {
+document.querySelector("#signIn").addEventListener('click', event => {
     event.preventDefault();
     apiConnexion();
 })

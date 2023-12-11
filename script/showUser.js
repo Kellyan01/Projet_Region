@@ -1,5 +1,5 @@
-const userData = JSON.parse(localStorage.getItem('User_CarPool'));
-console.log(userData);
+/*const userData = JSON.parse(localStorage.getItem('User_CarPool'));
+console.log(userData);*/
 
 //      AUTHENTIFICATION        //
 const options = {
