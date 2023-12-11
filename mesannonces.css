@@ -85,7 +85,7 @@ h1{
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    border-radius: 40% 40%;
+    border-radius: 30px;
 }
 
 #trajet {
@@ -98,4 +98,5 @@ h1{
 
 .nbrPers{
     display: flex;
+    align-items: center;
 }
