@@ -1,4 +1,6 @@
 
+
+
 .depart {
     display: flex;
     flex-direction: column;
@@ -123,7 +125,7 @@ h2:nth-child(1){
 
 #trajet {
     width: 40%;
-    height: 50%;
+    
     margin-right: 3px;
     margin-top: 5px;
   
