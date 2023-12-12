@@ -1,0 +1,29 @@
+Footer : rectifier les logos. Changer la phrase "Voyager avec nous" par "Conduisez mois, souries plus !"
+
+Accueil : rectifier nombre place pour le formulaire de recherche. Corriger les card
+
+Card : afficher le détail d'une annonce (annonceçview.html) en cliquant dessus
+
+Mes Annonces : rectifier le design des cards
+
+Annonce_view (détail annonce) : design des infos. Rectifier le footer. Coder en dur les événements. Faire fonctionner la réservation
+
+-----------------------------------------
+-----------------------------------------
+
+Scénario Démo Vidéo - Part 1 - Poster une Annonce :
+
+1) Accueil
+2) On se crée un compte
+3) On se connecte
+4) On crée une annonce
+5) On regarde la liste de nos annonces
+6) On affiche le détail d'une de nos annonces
+
+
+Scénario Démo Vidéo - Part 2 - Répondre à une Annonce :
+1) Profil
+2) Accueil
+3) Rechercher une annonce
+4) Afficher le détail d'une annonce
+5) Réserver sa place
