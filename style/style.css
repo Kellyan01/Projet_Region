@@ -402,3 +402,59 @@ input[type="submit"]:active {
     margin-right: 3px;
     margin-top: 5px;
 }
+
+/*TEST*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 10px 5px;
+    padding: 20px 10px;
+    gap: 10px;
+}
+
+.sear {
+    border-radius: 100px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+    margin: 10px;
+    padding: 10px;
+    color: var(--dark_text);
+    box-shadow: 5px 10px 10px #00000080;
+    border:solid black 2px;
+    border-radius: var(--radius);
+}
+
+.sbox {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    line-height: 1em;
+}
+
+.sbox > span {
+    width: 50%;
+}
+
+.img {
+    width: 100%;
+    border: solid black 2px;
+    border-radius: var(--radius);
+}
+
+.sbox > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sbox > div > div:last-child {
+    width: 100%;
+    text-align: end;
+}
