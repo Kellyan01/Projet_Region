@@ -33,16 +33,19 @@ input {
 #firstnameSignIn,
 #emailSignIn,
 #passwordSignIn,
-#email,
-#password {
+#emailConex,
+#passwordConex {
     border: none;
     border-bottom: solid #00000080 1px;
+    border-radius: 0%;
+
+
 }
 
 #signIn {
     width: fit-content;
     margin: auto;
-    padding: 5px 35px;
+    padding: 5px 25px;
     background-color: rgb(13, 83, 134);
     border-radius: 25px;
     border-style: none;
@@ -50,11 +53,32 @@ input {
     font-size: 20px;
 }
 
+#signIn2 {
+    width: fit-content;
+    margin-left: 19.5%;
+    padding: 5px 35px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 25px;
+    border-style: none;
+    color: white;
+    font-size: 20px;
+
+}
+
 #connectForm button {
     margin: auto;
     border-style: none;
     background-color: #ffffff;
     color: #1877f2;
+    width: fit-content;
+    padding-left: 0;
+}
+
+#connectForm h2 {
+    margin: auto;
+    width: fit-content;
+    padding-bottom: 20px;
 }
 
 .checkbox1 {
