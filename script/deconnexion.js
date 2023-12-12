@@ -5,4 +5,5 @@ function deconnexion() {
 let boutonDeconnexion = document.getElementById('liBoutonDeconnexion');
 boutonDeconnexion.onclick = function() {
     deconnexion();
+    location.href = 'index.html';
 };

@@ -11,6 +11,8 @@
 
     <script src="./script/showAnnonce.js" defer></script>
     <script src="./script/navbar.js" defer></script>
+    <script src="./script/repondreannonce.js" defer></script>
+    
 
 </head>
 
@@ -74,7 +76,7 @@
                 </div>
 
                 <div>
-                    <button><span>Réserver</span></button>
+                    <button><span onclick="openPop()">Réserver</span></button>
                 </div>
             </div>
         </div>
@@ -121,6 +123,20 @@
         </div>
         <a href="">Mentions Légales</a><a href="">CGU</a>
     </footer>
+
+    <form id="pop_up">
+        <div class="test">
+        <h3>Voulez-vous confirmer ce trajet ?</h3>
+        <textarea id="msg_res" name="msg_res" rows="5" cols="40"></textarea>
+    </div>
+        <div class="wrapper">
+            <input id="confirmer" type="submit" value="Confirmer">
+            <input id="closePopup3" type="submit" value="Annuler" onclick="closePopup3()" >  
+        </div>
+           
+    </form>
+
+
 </body>
 
 </html>
