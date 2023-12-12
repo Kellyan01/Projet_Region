@@ -498,7 +498,6 @@ input[type="submit"]:active {
 .travel_info {
     display: flex;
     margin: 10px 5px 0;
-    gap: 5px;
 }
 
 .profil {
@@ -523,7 +522,9 @@ input[type="submit"]:active {
 }
 
 .card_index button {
-    margin-left: 10%;
+    margin: 0px;
+    margin-left: 36%;
+    margin-top: 5%;
     background-color: #38729B;
     border: none;
     color: white;
@@ -533,6 +534,7 @@ input[type="submit"]:active {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 .card_index button:active {
