@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style/annonce_view.css">
     <link rel="stylesheet" href="./style/style.css">
 
-    <link rel="stylesheet" href="style/creerannonce.css">
+    <script src="./script/showAnnonce.js" defer></script>
     <script src="./script/navbar.js" defer></script>
 
 </head>
@@ -53,25 +53,24 @@
 
     <main>
 
-        <div id="title">Tournefeuille>> Basso cambo</div>
-        <div id="utilisateur"> KARDA Gilbert </div>
+        <div id="title"></div>
+        <div id="utilisateur"> </div>
 
         <div id="annonce">
             <img id="avatar" src="https://picsum.photos/300" alt="Avatar">
             <div>
                 <div>
-                    <p> <span>Heure de départ :</span> 8h20</p>
-                    <p><span>Lieu de départ :</span> 5 chemin de l'adrar, 31200 </p>
-                    <p><span>Lieu d'arrivé :</span> 12 avenue du titre, 31500</p>
+                    <!-- <p> <span>Heure de départ :</span><div id="heureDepart"></div></p> -->
+                    <!-- <p><span>Lieu de départ :</span><div id="lieuDepart"></div></p> -->
+                    <p><span>Lieu d'arrivée :</span><div id="lieuArrivee"></div></p>
                 </div>
 
-                <p><span>Informations complémentaires :</span> Je serai avec un manteau rouge !</p>
-                <div id="datecreation">
-                    <p><span>Date de création :</span> 10/10/2023 </p>
+                <p><span>Informations complémentaires :</span> <div id="infosComplementaires"></div></p>
+                <p><span>Date de création :</span><div id="dateCreation"></div></p>
                 </div>
 
                 <div>
-                    <p><span>Nombre de places :</span> 2 </p>
+                    <p><span>Nombre de places :</span><div id="nbPlaces"></div></p>
                 </div>
 
                 <div>
