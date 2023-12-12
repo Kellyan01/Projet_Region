@@ -101,3 +101,27 @@ h2 {
     align-items: center;
     color: #0d5386;
 }
+
+.wrapper{
+padding:6% 6% 6% 1%;
+}
+
+
+.test{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+textarea{
+    margin-top: 3%;
+}
+
+#pop_up{
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    border: solid rgb(105, 105, 105) 1px;
+
+}
