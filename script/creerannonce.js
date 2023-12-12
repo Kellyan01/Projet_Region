@@ -23,32 +23,48 @@ publier.addEventListener("click", async function(event) {
         token : user['token'],
     }
 
-	await createAnnonce(await postJSON(localisation, "https://blabladrar.adrardev.fr/localisation/add"));
+	postLocalisation(localisation);
 });
 
-async function createAnnonce(data) {
-	console.log(data);
-	
-	const title = document.querySelector("#title").value;
-	const creation_date = document.querySelector("#creation_date").value;
-	const description = document.querySelector("#description").value;
-	const place_number = document.querySelector("#place_number").value;
-
-	// postJSON(a, "https://blabladrar.adrardev.fr/add/add")
-};
-
-async function postJSON(donnees, url) {
+async function postLocalisation(donnees) {
     try {
-        const reponse = await fetch(url, {
+        const reponse = await fetch("https://blabladrar.adrardev.fr/localisation/add", {
             method: "POST",
             body: JSON.stringify(donnees),
         })
 		.then(result => {
-            console.log(result);
             return result.json();
         })
 		.then(response => {
 			console.log(response);
+			postAnnonce(response)
+			return response;
+		})
+    } catch (erreur) {
+        console.error("Erreur :", erreur);
+    }
+}
+
+async function postAnnonce(dataLocalisation) {
+
+	let data = {
+		title: document.querySelector("#title").value,
+		creation_date: document.querySelector("#creation_date").value,
+		description: document.querySelector("#description").value,
+		place_number: document.querySelector("#place_number").value,
+		localisation_id: dataLocalisation['localisation']['id'],
+		token: user['token'],
+	}
+
+    try {
+        const reponse = await fetch("https://blabladrar.adrardev.fr/add/add", {
+            method: "POST",
+            body: JSON.stringify(data),
+        })
+		.then(result => {
+            return result.json();
+        })
+		.then(response => {
 			return response;
 		})
     } catch (erreur) {
