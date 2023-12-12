@@ -44,6 +44,7 @@ signInButton.addEventListener("click", event => {
         console.log(user);
         const message = signIn(user);
         signInForm.reset();
+        location.href = 'connexion.html';
     } catch (error) {
         console.error(error);
     }
