@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient( 180deg, rgba(35, 185, 233, 0.58) 0%, rgba(86, 204, 242, 0.28) 100%);
     /*height: 30%;*/
 }
 
@@ -87,4 +86,8 @@ input {
 
 .checkbox1 p {
     padding-left: 15px;
+}
+
+.connexion{
+    position: absolute;
 }
