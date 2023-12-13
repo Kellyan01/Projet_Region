@@ -52,12 +52,13 @@ const options = {
 //      REQUETE API     //
 fetch('https://blabladrar.adrardev.fr/add/all', options)
     .then(response => {
-
+        
         //      TRANSFORME L'OBJET EN JSON      //
         return response.json();
         })
     // //      UTILISATION DES DONNEES         //
     .then(resultat => {
+        console.log(resultat);
         //      Trouve l'id utilisateur local      //
         let userId = localStorage.getItem('User_CarPool');
         let user = JSON.parse(userId);
