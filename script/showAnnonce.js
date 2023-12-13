@@ -31,3 +31,5 @@ async function getArticle(id) {
         console.error("Erreur :", erreur);
     }
 }
+
+getArticle(localStorage.getItem("idAnnonce"));

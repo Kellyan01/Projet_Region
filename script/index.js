@@ -24,9 +24,11 @@ async function getPost() {
 
             response.forEach(annonce => {
                 let img = "image_profil.png";
-                let hour = "8h30";
-                createCard(img, annonce.localisationId.nameLocalisation, annonce.localisationId.town, hour, annonce.description);
+                let date = annonce['creation_date'].substring(8, 10) + "/" + annonce['creation_date'].substring(5, 7) + "/" + annonce['creation_date'].substring(0, 4);
+                createCard(img, annonce.localisationId.nameLocalisation, annonce.title, date, annonce.description, annonce.id);
             });
+        
+            linkAnnonce();
 
     } catch (error) {
 
@@ -68,13 +70,26 @@ function createCard(img, depart, arriv, departTime, descript, id = null) {
 
     profile.src = `./img/${img}`;
     profile.alt = 'Image Avatar';
-    title.innerText = `Annonce : ${depart}  >>  ${arriv}`;
-    departLeave.innerText = `Heure de départ : ${departTime}`;
-    localLeave.innerText = `Lieu de départ : ${depart}`;
+    title.innerText = `${arriv}`;
+    departLeave.innerText = `Date : ${departTime}`;
+    localLeave.innerText = `Destination : ${depart}`;
     desc.innerText = `${descript}`;
     link.innerText = 'Réserver';
-    link.href = `./annonce_view.html`;
-
+    /*link.href = `./annonce_view.html`;*/
+    button.setAttribute('annonce',id);
 }
 
 getPost();
+
+function linkAnnonce(){
+    const buttonAnnonce = document.querySelectorAll("button[annonce]");
+    console.log(buttonAnnonce);
+    for(let annonce of buttonAnnonce){
+        console.log(annonce.getAttribute("annonce"));
+        annonce.addEventListener("click",event => {
+            event.preventDefault();
+            localStorage.setItem("idAnnonce",annonce.getAttribute("annonce"));
+            location.href="annonce_view.html";
+        })
+    }
+}

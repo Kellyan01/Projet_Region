@@ -32,17 +32,31 @@ function createCard(img, depart, arriv, departTime, descript, id = null) {
 
     profile.src = `./img/${img}`;
     profile.alt = 'Image Avatar';
-    title.innerText = `Annonce : ${depart}  >>  ${arriv}`;
-    departLeave.innerText = `Heure de départ : ${departTime}`;
-    localLeave.innerText = `Lieu de départ : ${depart}`;
+    title.innerText = `${arriv}`;
+    departLeave.innerText = `Date : ${departTime}`;
+    localLeave.innerText = `Destination : ${depart}`;
     desc.innerText = `${descript}`;
     link.innerText = 'Réserver';
-    link.href = `./annonce_view.html`;
+    /*link.href = `./annonce_view.html`;*/
+    button.setAttribute('annonce',id);
+}
+
+function linkAnnonce(){
+    const buttonAnnonce = document.querySelectorAll("button[annonce]");
+    console.log(buttonAnnonce);
+    for(let annonce of buttonAnnonce){
+        console.log(annonce.getAttribute("annonce"));
+        annonce.addEventListener("click",event => {
+            event.preventDefault();
+            localStorage.setItem("idAnnonce",annonce.getAttribute("annonce"));
+            location.href="annonce_view.html";
+        })
+    }
 }
 
 //    VARIABLE POUR INFOS MANQUANTES      // 
-let img = "image_profil.png";
-let hour = "8h30";
+// let img = "image_profil.png";
+// let hour = "8h30";
 
 //      AUTHENTIFICATION        //
 const options = {
@@ -67,7 +81,10 @@ fetch('https://blabladrar.adrardev.fr/add/all', options)
         //      Trouve l'id utilisateur d'une annonce      //
         resultat.forEach((element) => {
             if(userLocal==element["userId"]["id"]){
-                createCard(img, element.localisationId.nameLocalisation, element.localisationId.town, hour, element.description);
+                let img = "image_profil.png";
+                let date = element['creation_date'].substring(8, 10) + "/" + element['creation_date'].substring(5, 7) + "/" + element['creation_date'].substring(0, 4);
+                createCard(img, element.localisationId.nameLocalisation, element.title, date, element.description, element.id);
             }
     });
+    linkAnnonce();
 });

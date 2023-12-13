@@ -4,7 +4,12 @@ Footer :
 
 Accueil : 
  V- rectifier nombre place pour le formulaire de recherche. 
- - Corriger les card
+ - Corriger les card :
+	+ Titre
+	+ Avatar
+	+ Destination
+	+ Date
+	+ Description
 
 Card : 
  - afficher le détail d'une annonce (annonce_view.html) en cliquant dessus
