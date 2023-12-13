@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail de l'annonce</title>
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/annonce_view.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/creerannonce.css">
+    <script src="./script/showAnnonce.js" defer></script>
+    <script src="./script/navbar.js" defer></script>
+    <script src="./script/repondreannonce.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li id="liMesAnnonces"><a href="mesannonces.html">Mes Annonces</a></li>
+                        <li id="liCreerAnnonce"><a href="creerannonce.html">Créer une annonce</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <img id="logo" src="img/logo.png" alt="Logo">
+
+        <nav>
+            <ul>
+                <li class="deroulant"><img src="img/header_user.png" alt="Connexion">
+                    <ul class="sous">
+                        <li id="liConnexion"><a href="connexion.html">Connexion</a></li>
+                        <li id="liInscription"><a href="inscription.html">Inscription</a></li>
+                        <li id="liProfil"><a href="profil.html">Mon Profil</a></li>
+                        <li id="liBoutonDeconnexion"><a href="#">Déconnexion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="title"></div>
+        <div id="utilisateur"> </div>
+
+        <div id="annonce">
+            <img id="avatar" src="https://picsum.photos/300" alt="Avatar">
+            <div>
+                <div>
+                    <!-- <p> <span>Heure de départ :</span><div id="heureDepart"></div></p> -->
+                    <!-- <p><span>Lieu de départ :</span><div id="lieuDepart"></div></p> -->
+                    <p><span>Lieu d'arrivée :</span><div id="lieuArrivee"></div></p>
+                </div>
+
+                <p><span>Informations complémentaires :</span> <div id="infosComplementaires"></div></p>
+                <p><span>Date de création :</span><div id="dateCreation"></div></p>
+                </div>
+
+                <div>
+                    <p><span>Nombre de places :</span><div id="nbPlaces"></div></p>
+                </div>
+
+                <div>
+                    <button><span onclick="openPop()">Réserver</span></button>
+                </div>
+            </div>
+        </div>
+
+        <img id="map" src="https://img.lemde.fr/2022/09/12/21/0/712/474/1440/960/60/0/6b93485_1663001397649-une.png" alt="Carte">
+
+        <div id="below">
+            <div>
+                <h2>Aux alentours :</h2>
+                <p>(près de votre destination)</p>
+            </div>
+
+            <div id="around">
+                <div>
+                    <img src="https://picsum.photos/100" alt="img">
+                    <p>Mélée Numérique</p>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/100" alt="img">
+                    <p>Mélée Numérique</p>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/100" alt="img">
+                    <p>Mélée Numérique</p>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/100" alt="img">
+                    <p>Mélée Numérique</p>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/100" alt="img">
+                    <p>Mélée Numérique</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Voyager avec nous</p>
+        <div class="footer-images">
+            <img src="./img/adrar.png" width="100px" alt="Image 1">
+            <img src="./img/tlse_region.png" width="100px" alt="Image 2">
+            
+        </div>
+        <a href="">Mentions Légales</a><a href="">CGU</a>
+    </footer>
+
+    
+
+
+    <form id="pop_up">
+        <div class="test">
+        <h3>Voulez-vous confirmer ce trajet ?</h3>
+        <textarea id="msg_res" name="msg_res" rows="5" cols="40"></textarea>
+    </div>
+        <div class="wrapper">
+            <input id="confirmer" type="submit" value="Confirmer">
+            <input id="closePopup3" type="submit" value="Annuler" onclick="closePopup3()" >  
+        </div>
+           
+    </form>
+
+
+<script src="./script/form.js"></script>
+</body>
+
+</html>

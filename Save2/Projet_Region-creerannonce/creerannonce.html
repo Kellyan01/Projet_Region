@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/creerannonce.css">
+</head>
+
+<!-- ------------------------------------HEADER------------------------------------------------- -->
+<header>
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+                <div class="menu-items">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="annonces.html">Annonces</a></li>
+                    <li><a href="mesannonces.html">Mes Annonces</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a id="boutonDeconnexion" href="#">Déconnexion</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <img id="logo" src="img/logo.png" alt="Logo">
+    <div>
+        <img src="img/search.png" alt="Recherche">
+        <img src="img/header_user.png" alt="Connexion">
+    </div>
+</header>
+
+<!-- ------------------------------------HEADER------------------------------------------------- -->
+
+<!-- ------------------------------------formulaire------------------------------------------------- -->
+
+
+<h1>Publication d'un trajet</h1>
+
+<form id="formulaire">
+    <label for="title">Titre de l’annonce</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="creation_date">Date de création:</label>
+    <input type="date" id="creation_date" name="creation_date" required>
+
+    <label for="description">Description</label>
+    <input type="text" id="description" name="description" required>
+
+    <label for="place_number">Nombre de place</label>
+    <input type="number" id="place_number" name="place_number" required>
+
+    <label for="name_localisation">nom du lieu</label>
+    <input type="text" id="name_localisation" name="name_localisation" required>
+
+    <label for="name_street">nom de la rue</label>
+    <input type="text" id="name_street" name="name_street" required>
+
+    <label for="num_street">numéro de voie</label>
+    <input type="number" id="num_street" name="num_street" required>
+
+    <label for="town">Ville</label>
+    <input type="text" id="town" name="town" required>
+
+    <label for="postal_code">Code Postale</label>
+    <input type="number" id="postal_code" name="postal_code" required>
+
+    <input type="submit" value="Publier">
+</form>
+
+<!-- ------------------------------------formulaire------------------------------------------------- -->
+
+<!-- ------------------------------------footer------------------------------------------------- -->
+
+<footer>
+    <p>Voyager avec nous</p>
+    <div class="footer-images">
+        <img src="./img/logo.svg" width="100px" alt="Image 1">
+        <img src="./img/region.webp" width="100px" alt="Image 2">
+        <img src="./img/adrar.png" width="120px" height="50px" alt="Image 3">
+    </div>
+    <a href="">Mentions Légales</a><a href="">CGU</a>
+</footer>
+
+<!-- ------------------------------------footer------------------------------------------------- -->
+
+
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>

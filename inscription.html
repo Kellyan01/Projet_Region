@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/creerannonce.css">
+    <link rel="stylesheet" href="./style/inscription.css">
+    <script src="./script/navbar.js" defer></script>
+    <script src="./script/createUser.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li id="liMesAnnonces"><a href="mesannonces.html">Mes Annonces</a></li>
+                        <li id="liCreerAnnonce"><a href="creerannonce.html">Créer une annonce</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <img id="logo" src="img/logo.png" alt="Logo">
+
+        <nav>
+            <ul>
+                <li class="deroulant"><img src="img/header_user.png" alt="Connexion">
+                    <ul class="sous">
+                        <li id="liConnexion"><a href="connexion.html">Connexion</a></li>
+                        <li id="liInscription"><a href="inscription.html">Inscription</a></li>
+                        <li id="liProfil"><a href="profil.html">Mon Profil</a></li>
+                        <li id="liBoutonDeconnexion"><a href="#">Déconnexion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside id="blue_background">
+
+        <form id="signInForm">
+            <h2>Inscription</h2>
+            <input id="nameSignIn" type="text" placeholder="Nom" required>
+            <input id="firstnameSignIn" type="text" placeholder="Prenom" required>
+            <input id="emailSignIn" type="email" placeholder="Email" required>
+            <input id="passwordSignIn" type="text" placeholder="Mot de passe" required>
+            <input id="passwordSignIn" type="text" placeholder="Confirmez votre mot de passe" required>
+            <!-- <div class="checkbox1">
+                <input type="checkbox" id="checkbox">
+                <p>J'accepte les <a href="">Conditions Générales</a> et notre <a href=""> Politique de confidentialité</a>. </p>
+
+            </div> -->
+
+
+
+            <input id="signIn" type="submit" value="S'inscrire">
+            <a href="connexion.html">Déjà inscrit?</a>
+        </form>
+
+    </aside>
+
+
+
+    <footer>
+        <p>Voyager avec nous</p>
+        <div class="footer-images">
+            <img src="./img/adrar.png" width="100px" alt="Image 1">
+            <img src="./img/tlse_region.png" width="100px" alt="Image 2">
+            
+        </div>
+        <a href="">Mentions Légales</a><a href="">CGU</a>
+    </footer>
+
+</body>
+
+</html>

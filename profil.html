@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./script/script.js" defer></script>
+    <link rel="stylesheet" href="./style/creerannonce.css">
     <script src="./script/deconnexion.js" defer></script>
+    <script src="./script/navbar.js" defer></script>
     <script src="./script/showUser.js" defer></script>
     <script src="./script/updateUser.js" defer></script>
 </head>
@@ -26,27 +27,33 @@
 
                     <div class="menu-items">
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="profil.html">Profil</a></li>
-                        <li><a href="annonces.html">Annonces</a></li>
-                        <li><a href="mesannonces.html">Mes Annonces</a></li>
-                        <li><a href="apropos.html">A propos</a></li>
-                        <li><a id="boutonDeconnexion" href="#">Déconnexion</a></li>
+                        <li id="liMesAnnonces"><a href="mesannonces.html">Mes Annonces</a></li>
+                        <li id="liCreerAnnonce"><a href="creerannonce.html">Créer une annonce</a></li>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <img id="logo" src="img/logo.png" alt="Logo">
-        <div>
-            <img src="img/search.png" alt="Recherche">
-            <img src="img/header_user.png" alt="Connexion">
-        </div>
+        <img id="logo" src="./img/logo.png" alt="Logo">
+
+        <nav>
+            <ul>
+                <li class="deroulant"><img src="img/header_user.png" alt="Connexion">
+                    <ul class="sous">
+                        <li id="liConnexion"><a href="connexion.html">Connexion</a></li>
+                        <li id="liInscription"><a href="inscription.html">Inscription</a></li>
+                        <li id="liProfil"><a href="profil.html">Mon Profil</a></li>
+                        <li id="liBoutonDeconnexion"><a href="#">Déconnexion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <div class="iconmain">
             <img id="mail" src="img/email.png" alt="iconemail" width="50px">
-            <img id="pen" src="img/crayon.png" alt="iconcrayon" width="45px">
+            <img id="pen" src="img/crayon.png" alt="iconcrayon" width="45px" onclick="openForm()">
         </div>
         <div class="gerard">
             <img src="img/gerard.jpg" width="130px" alt="">
@@ -55,7 +62,8 @@
         </div>
         <div id="border"></div>
 
-        <form>
+        <form class="hideform" id="hideform">
+
             <h2>Modifier mes informations</h2>
             <div>
                 <label for="name">Nom :</label>
@@ -69,10 +77,24 @@
                 <label for="emailUpdate">E-mail :</label>
                 <input type="email" id="emailUpdate" name="user_email" placeholder="Email" required />
             </div>
-            <button id="modifButton">Modifier</button>
+            <div class="confcancel">
+                <button id="modifButton">Modifier</button>
+                <button id="cancelButton" onclick="closeForm()">Annuler</button>
+            </div>
+
 
         </form>
     </main>
+
+    <footer>
+        <p>Voyager avec nous</p>
+        <div class="footer-images">
+            <img src="./img/adrar.png" width="100px" alt="Image 1">
+            <img src="./img/tlse_region.png" width="100px" alt="Image 2">
+            
+        </div>
+        <a href="">Mentions Légales</a><a href="">CGU</a>
+    </footer>
 </body>
 
 </html>

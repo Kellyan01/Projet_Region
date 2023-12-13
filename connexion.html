@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/inscription.css">
+    <link rel="stylesheet" href="./style/creerannonce.css">
+    <link rel="stylesheet" href="./style/connexion.css">
+    <script src="./script/connexion.js" defer></script>
+    <script src="./script/deconnexion.js" defer></script>
+    <script src="./script/navbar.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li id="liMesAnnonces"><a href="mesannonces.html">Mes Annonces</a></li>
+                        <li id="liCreerAnnonce"><a href="creerannonce.html">Créer une annonce</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <img id="logo" src="img/logo.png" alt="Logo">
+
+        <nav>
+            <ul>
+                <li class="deroulant"><img src="img/header_user.png" alt="Connexion">
+                    <ul class="sous">
+                        <li id="liConnexion"><a href="connexion.html">Connexion</a></li>
+                        <li id="liInscription"><a href="inscription.html">Inscription</a></li>
+                        <li id="liProfil"><a href="profil.html">Mon Profil</a></li>
+                        <li id="liBoutonDeconnexion"><a href="#">Déconnexion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <aside id="blue_background">
+
+        <form id="connectForm">
+            <h2>Connexion</h2>
+            <input type="email" id="emailConex" class="form-control" placeholder="Email / Nom d'utilisateur" required />
+            <input type="password" id="passwordConex" class="form-control" placeholder="Mot de passe" required />
+            <input id="signIn2" type="submit" value="Se connecter">
+            <button>Mot de passe oublié?</button>
+            <a href="inscription.html">S'inscrire</a>
+        </form>
+    </aside>
+
+
+
+
+    <footer>
+        <p>Voyager avec nous</p>
+        <div class="footer-images">
+            <img src="./img/adrar.png" width="100px" alt="Image 1">
+            <img src="./img/tlse_region.png" width="100px" alt="Image 2">
+            
+        </div>
+        <a href="">Mentions Légales</a><a href="">CGU</a>
+    </footer>
+</body>
+
+</html>
