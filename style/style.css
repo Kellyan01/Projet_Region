@@ -266,6 +266,8 @@ nav>ul li:hover .sous {
 main {
     height: auto;
     z-index: 0;
+    padding-bottom: 30px;
+    min-height: calc(100vh - 253px);
 }
 
 .iconmain {
@@ -299,7 +301,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    margin-bottom: 108.5%;
 }
 
 .infoconduc {
@@ -625,7 +626,7 @@ section {
 .hideform {
     display: none;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 30px;
     padding: 25px;
     width: 80vw;
 }

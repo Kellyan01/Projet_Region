@@ -2,9 +2,10 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 10px 0;
+    /*margin: 10px 0;*/
     padding: 20px 10px;
     gap: 10px;
+    background: none;
 }
 
 span{
@@ -61,7 +62,7 @@ span{
 
 #map {
     margin: 0 -15px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 #below {
@@ -89,8 +90,8 @@ h2 {
 }
 
 #around img {
-    height: 100px;
-    width: 100px;
+    height: 176px;
+    /*width: 100px;*/
     margin-top: 5px;
     border: solid rgb(90, 90, 90) 1px;
 }

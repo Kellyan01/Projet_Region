@@ -1,15 +1,21 @@
-Footer : rectifier les logos. Changer la phrase "Voyager avec nous" par "Conduisez mois, souries plus !"
+Footer : 
+ V- rectifier les logos.
+ V- Changer la phrase "Voyager avec nous" par "Conduisez mois, souries plus !"
 
-Accueil : rectifier nombre place pour le formulaire de recherche. Corriger les card
+Accueil : 
+ - rectifier nombre place pour le formulaire de recherche. 
+ - Corriger les card
 
-Card : afficher le détail d'une annonce (annonceçview.html) en cliquant dessus
+Card : 
+ - afficher le détail d'une annonce (annonce_view.html) en cliquant dessus
 
-Mes Annonces : rectifier le design des cards
+Mes Annonces : 
+ - rectifier le design des cards
 
 Annonce_view (détail annonce) :
  V- design des infos
- - Rectifier le footer
- - Coder en dur les événements
+ V- Rectifier le footer
+ V- Coder en dur les événements
  - Faire fonctionner la réservation
 
 -----------------------------------------
