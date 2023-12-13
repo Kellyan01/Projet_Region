@@ -8,8 +8,6 @@ let dateCreation = document.querySelector('#dateCreation');
 let nbPlaces = document.querySelector('#nbPlaces'); 
 
 function showArticle(data) {
-    console.log(data);
-
     title.innerText = data['title'];
     utilisateur.innerText = data['userId']['name']+" "+data['userId']['firstname'];
     // heureDepart.innerText = data['placeNumber'];
@@ -17,9 +15,9 @@ function showArticle(data) {
     // lieuDepart.innerText = data['localisationId'];
     lieuArrivee.innerText = data['localisationId']['nameLocalisation']+ ", " +data['localisationId']['numStreet']+  " "+data['localisationId']['nameStreet']+ ", " +data['localisationId']['town']+ " " +data['localisationId']['postalCode'];
     infosComplementaires.innerText = data['description'];
-    dateCreation.innerText = data['creation_date'];
-    console.log(data['localisationId']['nameStreet']);
+    dateCreation.innerText = data['creation_date'].substring(8, 10) + "/" + data['creation_date'].substring(5, 7) + "/" + data['creation_date'].substring(0, 4);
 }
+
 
 async function getArticle(id) {
     try {

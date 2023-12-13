@@ -13,7 +13,7 @@
     <script src="./script/showAnnonce.js" defer></script>
     <script src="./script/navbar.js" defer></script>
     <script src="./script/repondreannonce.js" defer></script>
-    
+
 
 </head>
 
@@ -62,27 +62,29 @@
         <div id="annonce">
             <img id="avatar" src="https://picsum.photos/300" alt="Avatar">
             <div>
-                <div>
-                    <!-- <p> <span>Heure de départ :</span><div id="heureDepart"></div></p> -->
-                    <!-- <p><span>Lieu de départ :</span><div id="lieuDepart"></div></p> -->
-                    <p><span>Lieu d'arrivée :</span><div id="lieuArrivee"></div></p>
-                </div>
+                <!-- <p> <span>Heure de départ :</span><div id="heureDepart"></div></p> -->
+                <!-- <p><span>Lieu de départ :</span><div id="lieuDepart"></div></p> -->
+                <p><span>Destination :</span>
+                <div id="lieuArrivee"></div>
+                </p>
 
-                <p><span>Informations complémentaires :</span> <div id="infosComplementaires"></div></p>
-                <p><span>Date de création :</span><div id="dateCreation"></div></p>
-                </div>
+                <p><span>Description :</span>
+                <div id="infosComplementaires"></div>
+                </p>
+                <p><span>Date :</span>
+                <div id="dateCreation"></div>
+                </p>
 
-                <div>
-                    <p><span>Nombre de places :</span><div id="nbPlaces"></div></p>
-                </div>
+                <p><span>Nombre de places :</span>
+                <div id="nbPlaces"></div>
+                </p>
 
-                <div>
-                    <button><span onclick="openPop()">Réserver</span></button>
-                </div>
+                <button><span onclick="openPop()">Réserver</span></button>
             </div>
         </div>
 
-        <img id="map" src="https://img.lemde.fr/2022/09/12/21/0/712/474/1440/960/60/0/6b93485_1663001397649-une.png" alt="Carte">
+        <img id="map" src="https://img.lemde.fr/2022/09/12/21/0/712/474/1440/960/60/0/6b93485_1663001397649-une.png"
+            alt="Carte">
 
         <div id="below">
             <div>
@@ -129,23 +131,23 @@
     </div>
     </footer>
 
-    
+
 
 
     <form id="pop_up">
         <div class="test">
-        <h3>Voulez-vous confirmer ce trajet ?</h3>
-        <textarea id="msg_res" name="msg_res" rows="5" cols="40"></textarea>
-    </div>
+            <h3>Voulez-vous confirmer ce trajet ?</h3>
+            <textarea id="msg_res" name="msg_res" rows="5" cols="40"></textarea>
+        </div>
         <div class="wrapper">
             <input id="confirmer" type="submit" value="Confirmer">
-            <input id="closePopup3" type="submit" value="Annuler" onclick="closePopup3()" >  
+            <input id="closePopup3" type="submit" value="Annuler" onclick="closePopup3()">
         </div>
-           
+
     </form>
 
 
-<script src="./script/form.js"></script>
+    <script src="./script/form.js"></script>
 </body>
 
 </html>

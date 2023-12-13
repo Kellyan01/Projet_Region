@@ -6,7 +6,11 @@ Card : afficher le détail d'une annonce (annonceçview.html) en cliquant dessus
 
 Mes Annonces : rectifier le design des cards
 
-Annonce_view (détail annonce) : design des infos. Rectifier le footer. Coder en dur les événements. Faire fonctionner la réservation
+Annonce_view (détail annonce) :
+ V- design des infos
+ - Rectifier le footer
+ - Coder en dur les événements
+ - Faire fonctionner la réservation
 
 -----------------------------------------
 -----------------------------------------

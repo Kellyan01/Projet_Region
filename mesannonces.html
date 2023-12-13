@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes annonces</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/mesannonces.css">
     <link rel="stylesheet" href="./style/creerannonce.css">
-    <script src="./script/script.js" defer></script>
+    <script src="./script/connexion.js" defer></script>
     <script src="./script/deconnexion.js" defer></script>
     <script src="./script/navbar.js" defer></script>
+    <script src="./script/mes_annonces.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             </div>
         </nav>
 
-        <img id="logo" src="img/logo.png" alt="Logo">
+        <img id="logo" src="./img/logo.png" alt="Logo">
 
         <nav>
             <ul>
@@ -49,180 +49,17 @@
             </ul>
         </nav>
     </header>
-
+    
 
     <main>
-
         <h1>Mes Annonces</h1>
-        <div class="row">
-            <div class="card">
-                <div class="conducteur">
-                    <img id="profil" src="./img/image_profil.PNG" alt="">
-                    <h2 id="userName">Célia H.</h2>
-                </div>
-                <div class="content">
-                    <div class="date">
-                        <h2 id="date">12 décembre 2023</h2>
-                    </div>
-                    <div class="trajet">
-                        <div class="depart">
-                            <p><strong>Ramonville</strong></p>
-                            <p>8h35</p>
-                        </div>
-                        <img id="trajet" src="./img/trajet.png" alt="">
-                        <div class="destination">
-                            <p><strong id="destination">Borderouge</strong></p>
-                            <p id="heure">9h30</p>
-                        </div>
-                    </div>
-                    <div class="trajet">
-                        <div class="nbrPers">
-                            <img id="nbrplace" src="./img/homme.png" alt="">
-
-                            <p id="place">3 places restantes</p>
-                        </div>
-                        <input type="button" id="button" name="button" value="Afficher" />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card">
-
-                <div class="conducteur">
-                    <img id="profil" src="./img/image_profil.PNG" alt="">
-                    <h2>Célia H.</h2>
-                </div>
-
-                <div class="content">
-
-                    <div class="date">
-                        <h2>12 décembre 2023</h2>
-                    </div>
-                    <div class="trajet">
-
-                        <div class="depart">
-                            <p><strong>Ramonville</strong></p>
-                            <p>8h35</p>
-                        </div>
-
-                        <img id="trajet" src="./img/trajet.png" alt="">
-
-                        <div class="destination">
-                            <p><strong>Borderouge</strong></p>
-                            <p>9h30</p>
-                        </div>
-
-                    </div>
-
-                    <div class="trajet">
-
-
-                        <div class="nbrPers">
-                            <img id="nbrplace" src="./img/homme.png" alt="">
-
-                            <p>3 places restantes</p>
-
-                        </div>
-
-                        <input type="button" id="button" name="button" value="Afficher" />
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="card">
-
-                <div class="conducteur">
-                    <img id="profil" src="./img/image_profil.PNG" alt="">
-                    <h2>Célia H.</h2>
-                </div>
-
-                <div class="content">
-
-                    <div class="date">
-                        <h2>12 décembre 2023</h2>
-                    </div>
-                    <div class="trajet">
-
-                        <div class="depart">
-                            <p><strong>Ramonville</strong></p>
-                            <p>8h35</p>
-                        </div>
-
-                        <img id="trajet" src="./img/trajet.png" alt="">
-
-                        <div class="destination">
-                            <p><strong>Borderouge</strong></p>
-                            <p>9h30</p>
-                        </div>
-
-                    </div>
-
-                    <div class="trajet">
-
-
-                        <div class="nbrPers">
-                            <img id="nbrplace" src="./img/homme.png" alt="">
-
-                            <p>3 places restantes</p>
-
-                        </div>
-
-                        <input type="button" id="button" name="button" value="Afficher" />
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="card">
-
-                <div class="conducteur">
-                    <img id="profil" src="./img/image_profil.PNG" alt="">
-                    <h2>Célia H.</h2>
-                </div>
-
-                <div class="content">
-
-                    <div class="date">
-                        <h2>12 décembre 2023</h2>
-                    </div>
-                    <div class="trajet">
-
-                        <div class="depart">
-                            <p><strong>Ramonville</strong></p>
-                            <p>8h35</p>
-                        </div>
-
-                        <img id="trajet" src="./img/trajet.png" alt="">
-
-                        <div class="destination">
-                            <p><strong>Borderouge</strong></p>
-                            <p>9h30</p>
-                        </div>
-
-                    </div>
-
-                    <div class="trajet">
-
-
-                        <div class="nbrPers">
-                            <img id="nbrplace" src="./img/homme.png" alt="">
-
-                            <p>3 places restantes</p>
-
-                        </div>
-
-                        <input type="button" id="button" name="button" value="Afficher" />
-
-                    </div>
-                </div>
-
-            </div>
-
+        
+        <div id="cards_zone">
 
         </div>
+
     </main>
+
     <footer>
         <p>Conduisez moins, souriez plus !</p>
         <div class="footer-images">
