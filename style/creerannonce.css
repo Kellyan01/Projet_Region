@@ -232,7 +232,7 @@ button {
 
 h1 {
     text-align: center;
-    color: #00aff5;
+    color: #266999;
     margin: 0px;
     margin-top: 6%;
     margin-bottom: 6%;
@@ -243,37 +243,59 @@ h1 {
 *************************/
 
 footer {
-    background-color: #00aff5;
+    background-color: #266999;
     color: #fff;
     text-align: center;
     bottom: 0;
     width: 100%;
+    padding-bottom: 4%;
+}
+
+.lien {
+    margin-right: 11%;
 }
 
 .footer-images {
     display: flex;
     margin-bottom: 4%;
     margin-left: 2%;
-    justify-content: space-around;
+    justify-content: center;
+    margin-right: 13% !important;
 }
 
-.footer-images img {
-    margin: 0 10px;
-    height: 30px;
+/* .footer-images img {
+    height: 60px;
+} */
+#ern{
+    height: 45px;
+    padding-top: 13px;
+
 }
 
+#polenum{
+    height: 60px;
+}
 footer p{
     text-align: center;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
+    padding-top: 3%;
+    color: #fe7b04;
+    font-weight: bold;
+    margin-right: 10%;
 } 
 
 footer a{
     text-align: center;
     margin-bottom: 4%;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 10px;
+
 } 
  
 input[type="submit"]{
     margin-left: 0%;
 }
+
 
 
