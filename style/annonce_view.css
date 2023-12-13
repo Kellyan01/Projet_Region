@@ -1,7 +1,6 @@
 main {
     display: flex;
     flex-direction: column;
-    height: 100%;
     /*margin: 10px 0;*/
     padding: 20px 10px;
     gap: 10px;
@@ -38,6 +37,17 @@ span{
 }
 
 #annonce button {
+    background-color: #0d5386;
+    color: white;
+    width: fit-content;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+}
+
+#annonceButton {
     background-color: #0d5386;
     color: white;
     width: fit-content;

@@ -3,7 +3,7 @@ Footer :
  V- Changer la phrase "Voyager avec nous" par "Conduisez mois, souries plus !"
 
 Accueil : 
- - rectifier nombre place pour le formulaire de recherche. 
+ V- rectifier nombre place pour le formulaire de recherche. 
  - Corriger les card
 
 Card : 
