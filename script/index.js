@@ -10,15 +10,23 @@ async function getPost() {
 
         console.log(response);
 
-        response.forEach(annonce => {
-            let img = "image_profil.png";
-            let hour = "8h30";
-            createCard(img, annonce.localisationId.nameLocalisation, annonce.localisationId.town, hour, annonce.description);
-        });
+            // let destinationInput = document.getElementById("destinationInput").value;
+            
+            // response.forEach(annonce => {
+            //     if(destinationInput == annonce.localisationId.town){
+            //         let img = "image_profil.png";
+            //         let hour = "8h30";
+            //         createCard(img, annonce.localisationId.nameLocalisation, annonce.localisationId.town, hour, annonce.description);
+            //     }
+            // });
 
-        if (submit == true) {
-            let destinationInput = document.get
-        }
+            // console.log(submit);
+
+            response.forEach(annonce => {
+                let img = "image_profil.png";
+                let hour = "8h30";
+                createCard(img, annonce.localisationId.nameLocalisation, annonce.localisationId.town, hour, annonce.description);
+            });
 
     } catch (error) {
 
@@ -27,7 +35,7 @@ async function getPost() {
     }
 }
 
-function createCard(img, depart, arriv, departTime, descript) {
+function createCard(img, depart, arriv, departTime, descript, id = null) {
 
     let main = document.querySelector('#cards_zone');
     let box = document.createElement('div');
@@ -40,6 +48,7 @@ function createCard(img, depart, arriv, departTime, descript) {
     let desc = document.createElement('p');
     let buttonDiv = document.createElement('div');
     let button = document.createElement('button');
+    let link = document.createElement('a');
 
     box.classList.add('box');
     main.appendChild(box);
@@ -55,6 +64,7 @@ function createCard(img, depart, arriv, departTime, descript) {
     div.appendChild(desc);
     div.appendChild(buttonDiv);
     buttonDiv.appendChild(button);
+    button.appendChild(link);
 
     profile.src = `./img/${img}`;
     profile.alt = 'Image Avatar';
@@ -62,7 +72,9 @@ function createCard(img, depart, arriv, departTime, descript) {
     departLeave.innerText = `Heure de départ : ${departTime}`;
     localLeave.innerText = `Lieu de départ : ${depart}`;
     desc.innerText = `${descript}`;
-    button.innerText = 'Réserver';
+    link.innerText = 'Réserver';
+    link.href = `./annonce_view.html`;
+
 }
 
 getPost();
