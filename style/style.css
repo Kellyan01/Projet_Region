@@ -403,7 +403,7 @@ input[type="submit"]:active {
     margin-top: 5px;
 }
 
-/*TEST*/
+/*CARD Noveaux*/
 
 section {
     display: flex;
@@ -421,13 +421,12 @@ section {
 .box {
     display: flex;
     flex-direction: column;
-    background-color: var(--blue);
+    background-color: whitesmoke;
     margin: 10px;
     padding: 10px;
     color: var(--dark_text);
     box-shadow: 5px 10px 10px #00000080;
-    border:solid black 2px;
-    border-radius: var(--radius);
+    border-radius: 30px;
 }
 
 .sbox {
@@ -437,12 +436,14 @@ section {
     line-height: 1em;
 }
 
-.sbox > span {
-    width: 50%;
+.sbox > div > p{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
-
 .img {
-    width: 100%;
+    width: 35%;
+    height: 100%;
     border: solid black 2px;
     border-radius: var(--radius);
 }
@@ -457,4 +458,19 @@ section {
 .sbox > div > div:last-child {
     width: 100%;
     text-align: end;
+    display: flex;
+    justify-content: center
+}
+.one{
+    color: #266999;
+    margin-left: 10px;
+}
+
+.sbox > div > div > button{
+    padding: 10px 45px 10px 45px;
+    border-radius: 30px;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+    background-color:#266999;
+    color: #ffffff;
+    border:0px;
 }
