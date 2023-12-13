@@ -11,7 +11,7 @@
     <script src="./script/deconnexion.js" defer></script>
     <script src="./script/navbar.js" defer></script>
     <script src="./script/main.js" defer></script>
-    <script src="./script/creerannonce.js" defer></script>    
+    <script src="./script/creerannonce.js" defer></script>
 </head>
 
 <!-- ------------------------------------HEADER------------------------------------------------- -->
@@ -58,56 +58,56 @@
 
 <!-- ------------------------------------formulaire------------------------------------------------- -->
 
+<main>
+    <h1>Publication d'un trajet</h1>
 
-<h1>Publication d'un trajet</h1>
+    <form id="formulaire">
+        <label for="title">Titre de l’annonce</label>
+        <input type="text" id="title" name="title" required>
 
-<form id="formulaire">
-    <label for="title">Titre de l’annonce</label>
-    <input type="text" id="title" name="title" required>
+        <label for="creation_date">Date de départ</label>
+        <input type="date" id="creation_date" name="creation_date" required>
 
-    <label for="creation_date">Date de création:</label>
-    <input type="date" id="creation_date" name="creation_date" required>
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" required>
 
-    <label for="description">Description</label>
-    <input type="text" id="description" name="description" required>
+        <label for="place_number">Nombre de place</label>
+        <input type="number" id="place_number" name="place_number" required>
 
-    <label for="place_number">Nombre de place</label>
-    <input type="number" id="place_number" name="place_number" required>
+        <label for="name_localisation">Nom du lieu</label>
+        <input type="text" id="name_localisation" name="name_localisation" required>
 
-    <label for="name_localisation">Nom du lieu</label>
-    <input type="text" id="name_localisation" name="name_localisation" required>
+        <label for="name_street">Nom de la rue</label>
+        <input type="text" id="name_street" name="name_street" required>
 
-    <label for="name_street">Nom de la rue</label>
-    <input type="text" id="name_street" name="name_street" required>
+        <label for="num_street">Numéro de voie</label>
+        <input type="number" id="num_street" name="num_street" required>
 
-    <label for="num_street">Numéro de voie</label>
-    <input type="number" id="num_street" name="num_street" required>
+        <label for="town">Ville</label>
+        <input type="text" id="town" name="town" required>
 
-    <label for="town">Ville</label>
-    <input type="text" id="town" name="town" required>
+        <label for="postal_code">Code Postale</label>
+        <input type="number" id="postal_code" name="postal_code" required>
 
-    <label for="postal_code">Code Postale</label>
-    <input type="number" id="postal_code" name="postal_code" required>
+        <input id="publier" type="submit" value="Publier">
+    </form>
 
-    <input id="publier" type="submit" value="Publier">
-</form>
+    <!-- ------------------------------------formulaire------------------------------------------------- -->
 
-<!-- ------------------------------------formulaire------------------------------------------------- -->
-
-<!-- ------------------------------------footer------------------------------------------------- -->
-
+    <!-- ------------------------------------footer------------------------------------------------- -->
+</main>
 <footer>
     <p>Conduisez moins, souriez plus !</p>
     <div class="footer-images">
-        <img  id="ern" src="./img/ern2.png"alt="Image 2">
-        <img  id="polenum" src="./img/polenum2.png" alt="Image 1">
-        
-        
+        <img id="ern" src="./img/ern2.png" alt="Image 2">
+        <img id="polenum" src="./img/polenum2.png" alt="Image 1">
+
+
     </div>
     <div class="lien">
-    <a href="mentionslegales.html">Mentions Légales</a>
-    <a href="cgv.html">CGU</a>
-</div>
+        <a href="mentionslegales.html">Mentions Légales</a>
+        <a href="cgv.html">CGU</a>
+    </div>
 </footer>
 <!-- ------------------------------------footer------------------------------------------------- -->
 

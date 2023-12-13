@@ -5,14 +5,17 @@ main {
     padding: 20px 10px;
     gap: 10px;
     background: none;
+    background: linear-gradient( 180deg, rgba(35, 185, 233, 0.58) 0%, rgba(86, 204, 242, 0.28) 100%);
 }
 
-span{
+span {
     font-weight: bold;
 }
+
 #title {
     color: #0d5386;
     font-weight: bold;
+    font-size: 1.5rem;
     display: grid;
     align-self: center;
     margin-bottom: 4%;
@@ -21,7 +24,6 @@ span{
 #utilisateur {
     color: #0d5386;
     font-weight: bold;
-    
 }
 
 #annonce {
@@ -30,7 +32,7 @@ span{
     margin-bottom: 5%;
 }
 
-#annonce > div {
+#annonce>div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -58,7 +60,7 @@ span{
     border-radius: 25px;
 }
 
-#annonce > div > div {
+#annonce>div>div {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -81,7 +83,7 @@ span{
     gap: 20px;
 }
 
-#below > div:first-child {
+#below>div:first-child {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -106,33 +108,35 @@ h2 {
     border: solid rgb(90, 90, 90) 1px;
 }
 
-#around > div {
+#around>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #0d5386;
 }
 
-.wrapper{
-padding:6% 6% 6% 1%;
+.wrapper {
+    padding: 6% 6% 6% 1%;
 }
 
-
-.test{
+.test {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
-textarea{
+
+textarea {
     margin-top: 3%;
 }
 
-#pop_up{
+#pop_up {
     display: none;
     position: absolute;
     top: 20%;
     left: 6%;
     border: solid rgb(105, 105, 105) 1px;
+}
 
+#msg_res {
+    padding: 5px;
 }

@@ -25,6 +25,35 @@ Annonce_view (détail annonce) :
 
 -----------------------------------------
 -----------------------------------------
+Utilisateur :
+
+Prénom : Yoann
+Email : y.depriester@gmail.fr
+Password : 12345
+
+Prénom : Sophie
+Email : sophie.pou@orange.fr
+Password : 12345
+
+Prénom : Jeff
+Email : jeffrey31000@free.fr
+Password : 12345
+
+Prénom : Mathieu
+Email : matmith@sfr.fr
+Password : 12345
+
+Prénom : Jérôme
+Email : jerome.ch@orange.fr
+Password : 12345
+
+Prénom : Gérard
+Nom : Cavumen
+Email : g.cavumen@bouygues.fr
+Password : Vermeille#31
+
+-----------------------------------------
+-----------------------------------------
 
 Scénario Démo Vidéo - Part 1 - Poster une Annonce :
 

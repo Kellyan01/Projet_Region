@@ -29,7 +29,9 @@ function signIn(data) {
         })
         .then(result => {
             console.log(result);
-            return result;
+            signInForm.reset();
+            location.href = 'connexion.html';
+            /*return result;*/
         })
         .catch(error => {
             console.error(error);
@@ -42,9 +44,11 @@ signInButton.addEventListener("click", event => {
     try {
         const user = recupData();
         console.log(user);
-        const message = signIn(user);
-        signInForm.reset();
-        location.href = 'connexion.html';
+        signIn(user);
+        /*signInForm.reset();*/
+        /*location.href = 'connexion.html';*/
+        /*let aside = document.querySelector("#blue_background");*/
+
     } catch (error) {
         console.error(error);
     }

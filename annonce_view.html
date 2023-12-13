@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Détail de l'annonce</title>
-    <link rel="stylesheet" href="./style/common.css">
+    <!--<link rel="stylesheet" href="./style/common.css">-->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/creerannonce.css">
     <link rel="stylesheet" href="./style/annonce_view.css">
@@ -66,18 +66,18 @@
                 <!-- <p> <span>Heure de départ :</span><div id="heureDepart"></div></p> -->
                 <!-- <p><span>Lieu de départ :</span><div id="lieuDepart"></div></p> -->
                 <p><span>Destination :</span>
-                <div id="lieuArrivee"></div>
+                    <div id="lieuArrivee"></div>
                 </p>
 
                 <p><span>Description :</span>
-                <div id="infosComplementaires"></div>
+                    <div id="infosComplementaires"></div>
                 </p>
                 <p><span>Date :</span>
-                <div id="dateCreation"></div>
+                    <div id="dateCreation"></div>
                 </p>
 
                 <p><span>Nombre de places :</span>
-                <div id="nbPlaces"></div>
+                    <div id="nbPlaces"></div>
                 </p>
 
                 <!--<button><span onclick="openPop()">Réserver</span></button>-->
@@ -86,8 +86,11 @@
 
         <button id="annonceButton"><span onclick="openPop()">Réserver</span></button>
 
-        <img id="map" src="https://img.lemde.fr/2022/09/12/21/0/712/474/1440/960/60/0/6b93485_1663001397649-une.png"
-            alt="Carte">
+        <img id="map" src="https://img.lemde.fr/2022/09/12/21/0/712/474/1440/960/60/0/6b93485_1663001397649-une.png" alt="Carte">
+
+        <div id="cards_zone">
+
+        </div>
 
         <div id="below">
             <div>
@@ -139,15 +142,15 @@
     <footer>
         <p>Conduisez moins, souriez plus !</p>
         <div class="footer-images">
-            <img  id="ern" src="./img/ern2.png"alt="Image 2">
-            <img  id="polenum" src="./img/polenum2.png" alt="Image 1">
-            
-            
+            <img id="ern" src="./img/ern2.png" alt="Image 2">
+            <img id="polenum" src="./img/polenum2.png" alt="Image 1">
+
+
         </div>
         <div class="lien">
-        <a href="mentionslegales.html">Mentions Légales</a>
-        <a href="cgv.html">CGU</a>
-    </div>
+            <a href="mentionslegales.html">Mentions Légales</a>
+            <a href="cgv.html">CGU</a>
+        </div>
     </footer>
 
 
@@ -156,7 +159,7 @@
     <form id="pop_up">
         <div class="test">
             <h3>Voulez-vous confirmer ce trajet ?</h3>
-            <textarea id="msg_res" name="msg_res" rows="5" cols="40"></textarea>
+            <textarea id="msg_res" name="msg_res" rows="4" cols="40"></textarea>
         </div>
         <div class="wrapper">
             <input id="confirmer" type="submit" value="Confirmer">

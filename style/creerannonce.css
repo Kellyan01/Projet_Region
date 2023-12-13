@@ -39,15 +39,15 @@ header img {
 }
 
 
-
-
 /*************************
         MENU
 *************************/
-main{
+
+main {
     background: linear-gradient( 180deg, rgba(35, 185, 233, 0.58) 0%, rgba(86, 204, 242, 0.28) 100%);
-     
+    margin-top: -10px;
 }
+
 .container {
     max-width: 1050px;
     width: 90%;
@@ -180,7 +180,6 @@ main{
     display: none;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -238,9 +237,10 @@ h1 {
     color: #266999;
     color: #0d5386;
     margin: 0px;
-    margin-top: 6%;
+    padding-top: 6%;
     margin-bottom: 6%;
 }
+
 
 /*************************
         FOOTER
@@ -267,19 +267,21 @@ footer {
     margin-right: 13% !important;
 }
 
+
 /* .footer-images img {
     height: 60px;
 } */
-#ern{
+
+#ern {
     height: 45px;
     padding-top: 13px;
-
 }
 
-#polenum{
+#polenum {
     height: 60px;
 }
-footer p{
+
+footer p {
     text-align: center;
     margin-bottom: 3%;
     padding-top: 3%;
@@ -287,20 +289,16 @@ footer p{
     color: #fff;
     font-weight: bold;
     margin-right: 10%;
-} 
+}
 
-footer a{
+footer a {
     text-align: center;
     margin-bottom: 4%;
     text-decoration: none;
     color: #ffffff;
     font-size: 10px;
-
-} 
- 
-input[type="submit"]{
-    margin-left: 0%;
 }
 
-
-
+input[type="submit"] {
+    margin-left: 0%;
+}
