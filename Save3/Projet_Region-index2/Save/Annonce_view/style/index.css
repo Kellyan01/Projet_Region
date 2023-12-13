@@ -1,0 +1,45 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: clip;
+    width: fit-content;
+    padding: 20px 20px 0;
+    gap: 20px;
+    box-shadow: 0 5px 10px #00000080;
+    border-radius: 25px;
+}
+
+form > div {
+    display: flex;
+    gap: 10px;
+}
+
+form img {
+    width: 15px;
+    height: 15px;
+}
+
+#nbr_pers_button {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: solid #00000080 1px;
+}
+
+input[type="date"] {
+    border: none;
+    border-right: solid #00000080 1px;
+    width: min-content;
+}
+
+input[type="submit"] {
+    background-color: #0d5386;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    margin: 0 -20px;
+    border: none;
+}
